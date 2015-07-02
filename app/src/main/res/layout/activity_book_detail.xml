@@ -1,0 +1,221 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yey.read.home.activity.BookDetailActivity">
+
+    <include
+        layout="@layout/common_header_layout"
+        >
+    </include>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_188_dip"
+                >
+                
+                <ImageView
+                    android:id="@+id/book_cover"
+                    android:layout_width="@dimen/dimen_112_dip"
+                    android:layout_height="@dimen/dimen_143_dip"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:layout_marginTop="19dip"
+                    android:layout_marginBottom="26dip"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:id="@+id/book_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_18_dip"
+                    android:textColor="#333333"
+                    android:layout_toRightOf="@+id/book_cover"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:layout_marginTop="@dimen/dimen_32_dip"
+                    />
+                
+                <TextView
+                    android:id="@+id/book_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/book_cover"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:layout_below="@+id/book_title"
+                    android:layout_marginTop="@dimen/dimen_34_dip"
+                    android:textSize="@dimen/dimen_13_dip"
+                    android:textColor="#999999"
+                    />
+
+                <TextView
+                    android:id="@+id/book_translate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/book_cover"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:layout_below="@+id/book_author"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_13_dip"
+                    android:textColor="#999999"
+                    />
+
+                <TextView
+                    android:id="@+id/book_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/book_cover"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:layout_below="@+id/book_translate"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_13_dip"
+                    android:textColor="#999999"
+                    />
+
+                <TextView
+                    android:id="@+id/book_isbn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/book_cover"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:layout_below="@+id/book_publisher"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_13_dip"
+                    android:textColor="#999999"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginRight="@dimen/dimen_15_dip"
+                android:background="@drawable/shape"
+                >
+
+                <TextView
+                    android:id="@+id/reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_15_dip"
+                    android:text="推荐理由 :"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dimen_17_dip"
+                    android:textColor="#333333"
+                    />
+
+                <TextView
+                    android:id="@+id/reason_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reason"
+                    android:layout_marginTop="@dimen/dimen_13_dip"
+                    android:textSize="@dimen/dimen_17_dip"
+                    android:textColor="#333333"
+                    />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reason_content"
+                    android:layout_marginTop="@dimen/dimen_30_dip"
+                    android:text="适合人群 :"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dimen_17_dip"
+                    android:textColor="#333333"
+                    />
+
+                <TextView
+                    android:id="@+id/age_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/age"
+                    android:layout_marginTop="@dimen/dimen_13_dip"
+                    android:textSize="@dimen/dimen_17_dip"
+                    android:textColor="#333333"
+                    />
+
+            </RelativeLayout>
+            
+            <Button
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_26_dip"
+                android:text="阅读指引"
+                style="@style/registerButton"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/author_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_34_dip"
+                    android:layout_marginLeft="@dimen/dimen_40_dip"
+                    android:text="作者简介 :"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dimen_17_dip"
+                    android:textColor="#333333"
+                    />
+
+                <TextView
+                    android:id="@+id/author_intro_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/author_intro"
+                    android:layout_marginTop="@dimen/dimen_27_dip"
+                    android:layout_marginLeft="@dimen/dimen_27_dip"
+                    android:textSize="@dimen/dimen_18_dip"
+                    android:textColor="#333333"
+                    />
+
+                <TextView
+                    android:id="@+id/detail_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/author_intro_content"
+                    android:layout_marginTop="@dimen/dimen_75_dip"
+                    android:layout_marginLeft="@dimen/dimen_40_dip"
+                    android:text="内容简介 :"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dimen_17_dip"
+                    android:textColor="#333333"
+                    />
+
+                <TextView
+                    android:id="@+id/detail_intro_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_intro"
+                    android:layout_marginTop="@dimen/dimen_27_dip"
+                    android:layout_marginLeft="@dimen/dimen_27_dip"
+                    android:textSize="@dimen/dimen_18_dip"
+                    android:textColor="#333333"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

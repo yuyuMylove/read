@@ -1,0 +1,47 @@
+<resources>
+    <!--注册登录-->
+    <string name="app_name">read</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_password">密码</string>
+    <string name="login_account">账号</string>
+    <string name="login_button">登录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="register_button">注册</string>
+    <string name="register">注册</string>
+    <string name="title_activity_guide">GuideActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_first_step">FirstStepActivity</string>
+    <string name="hint_phone_number">请输入手机号码</string>
+    <string name="hint_code_number">请输入验证码</string>
+    <string name="hint_password_number">请设置密码</string>
+    <string name="register_name_digits">1234567890</string>
+    <string name="next_step">下一步</string>
+    <string name="title_activity_second_step">SecondStepActivity</string>
+    <string name="title_activity_third_step">ThirdStepActivity</string>
+    <string name="title_activity_fourth_step">FourthStepActivity</string>
+    <string name="title_activity_fifth_step">FifthStepActivity</string>
+
+    <!--首页tab-->
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_square">广场</string>
+    <string name="tab_service">服务</string>
+    <string name="tab_me">我</string>
+    <string name="recommend_cartoon">推荐绘本</string>
+    <string name="more">更多</string>
+    <string name="exclusive_booklist">专属书单</string>
+    <string name="age">3－4岁</string>
+    <string name="newest_message">最新动态</string>
+
+    <!--控件-->
+    <string name="msg_load_ing">加载中</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_recommend_book">RecommendBookActivity</string>
+    <string name="title_activity_book_detail">BookDetailActivity</string>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="progress" format="integer" />
+        <attr name="backgroundPadding" format="dimension" />
+        <attr name="backgroundRadius" format="dimension" />
+        <attr name="maxProgress" format="integer" />
+        <attr name="iconSrc" format="integer" />
+        <attr name="iconSize" format="dimension" />
+        <attr name="iconPadding" format="dimension" />
+        <attr name="headerColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="textProgressColor" format="color" />
+        <attr name="textProgress" format="string" />
+        <attr name="textProgressUnit" format="string" />
+        <attr name="textProgressSize" format="dimension" />
+        <attr name="textProgressWidth" format="dimension" />
+        <attr name="textProgressPadding" format="dimension" />
+        <attr name="autoTextChange" format="boolean" />
+    </declare-styleable>
+     <declare-styleable name="ViewPagerIndicator">
+        <attr name="vpiCirclePageIndicatorStyle" format="reference"/>
+       
+ 
+    </declare-styleable>
+    
+         <declare-styleable name="RoundProgressBar">  
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />  
+        <attr name="textSize" format="dimension" /> 
+        <attr name="max" format="integer"></attr> 
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable> 
+     
+    <declare-styleable name="TabButton">
+		<attr name="normal_bg_res" format="reference" />
+		<attr name="selected_bg_res" format="reference" />
+	</declare-styleable>
+	
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    
+      <declare-styleable name="swipelistviewstyle">    
+        <attr name="right_width" format="dimension"></attr>  
+    </declare-styleable>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+    <attr name="rightPadding" format="dimension" />
+</resources>

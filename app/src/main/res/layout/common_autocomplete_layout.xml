@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_45_dip"
+    android:background="@drawable/listview_select_item"
+     >     
+	<TextView 
+	        android:id="@+id/txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/txtSize_17_sp"
+	        android:layout_centerVertical="true"	        
+	        android:paddingLeft="@dimen/dimen_10_dip"	        
+	        android:textColor="@color/grey"       
+	/>  
+    	
+</RelativeLayout>

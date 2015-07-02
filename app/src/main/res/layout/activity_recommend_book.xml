@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/common_header_layout"
+        >
+    </include>
+
+
+    <ListView
+        android:id="@+id/lv_recommend_book"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f2f2f2"
+        android:divider="@null"
+        android:dividerHeight="10dip"
+        android:paddingTop="@dimen/dimen_14_dip"
+        android:paddingBottom="@dimen/dimen_14_dip"
+        >
+    </ListView>
+
+
+
+</LinearLayout>

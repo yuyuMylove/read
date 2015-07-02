@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <include
+        layout="@layout/common_header_layout"
+        >
+    </include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_34_dip"
+            android:orientation="horizontal"
+            >
+
+            <com.yey.read.widget.loginwidget.CircleImageView
+                android:layout_width="@dimen/dimen_55_dip"
+                android:layout_height="@dimen/dimen_55_dip"
+                android:layout_marginLeft="@dimen/dimen_22_dip"
+                android:src="@drawable/register_question2_icon"
+                app:border_width="0.5dip"
+                app:border_color="@color/white"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/dimen_22_dip"
+                android:layout_marginLeft="@dimen/dimen_17_dip"
+                android:textSize="@dimen/txtSize_23_sp"
+                android:textColor="#333333"
+                android:layout_gravity="right"
+                android:gravity="left|center_vertical"
+                android:text="谁经常陪孩子一起阅读 ?"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="A. 爸爸"
+            style="@style/registerQuestion1"
+            />
+
+        <Button
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="B. 妈妈"
+            style="@style/registerQuestion1"
+            />
+
+        <Button
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="C. 爷爷奶奶"
+            style="@style/registerQuestion1"
+            />
+
+        <Button
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="D. 奶奶外婆"
+            style="@style/registerQuestion1"
+            />
+
+        <Button
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="E. 其它"
+            style="@style/registerQuestion1"
+            />
+
+        <Button
+            android:layout_marginTop="@dimen/dimen_21_dip"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/btn_activity_nextstep4"
+            android:text="@string/next_step"
+            style="@style/registerButton"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <item type="id" name="left_btn" />
+     <item type="id" name="header_title" />
+     <item type="id" name="right_btn" />
+     <item type="id" name="right_tv" />
+     <item type="id" name="ll_buttom_tab_home" />
+     <item type="id" name="ll_buttom_tab_home_selected" />
+     <item type="id" name="ll_buttom_tab_service" />
+     <item type="id" name="ll_buttom_tab_service_selected" />
+     <item type="id" name="ll_buttom_tab_contacts" />
+     <item type="id" name="ll_buttom_tab_contacts_selected" />
+     <item type="id" name="ll_buttom_tab_me" />
+     <item type="id" name="ll_buttom_tab_me_selected" />     
+     <!-- 发通知 -->
+     <item type="id" name="id_sendmsg_scroll"/>
+     <item type="id" name="id_sendmsg_msgcount_tv"/>
+     <item type="id" name="id_sendmsg_time_tv"/>
+     <item type="id" name="id_sendmsg_now_btn"/>
+     <item type="id" name="id_sendmsg_attime_btn"/>
+     <item type="id" name="id_sendmsg_namecount_tv"/>
+     <item type="id" name="id_sendmsg_addname_iv"/>
+     <item type="id" name="id_sendmsg_showname_gridview"/>
+     <item type="id" name="id_sendmsg_moban_btn"/>
+     <item type="id" name="id_showmoban_content_et"/>              
+     <item type="id" name="myly"/>
+     <item type="id" name="id_sendmsg_undo_sel_people"/>
+     <item type="id" name="id_sendmsg_select_people"/>
+     <item type="id" name="id_sendmsg_fragment_content"/>
+     <item type="id" name="report_button"/>
+     <item type="id" name="id_sendmsg_msghistory_lv"/>    
+     <item type="id" name="id_sendnotiyf_select_fenleiyi_fl"/>
+     <item type="id" name="id_sendnotiyf_select_fenleier_fl"/>
+     <item type="id" name="id_sendnotiyf_select_fenleisan_fl"/>
+     <item type="id" name="id_sendnotiyf_select_fenleisi_fl"/>
+     <item type="id" name="id_sendnotiyf_select_fenleiwu_fl"/>
+     <item type="id" name="id_sendnotify_fenleicontent_lv"/>
+     <item type="id" name="id_inflater_sendmsg_showname_tv"/>
+     <item type="id" name="id_inflater_sendmsg_name_cb"/>
+     <item type="id" name="id_inflater_sendmsg_child_name_tv"/>
+     <item type="id" name="id_inflater_sendmsg_child_phone_tv"/>
+     <item type="id" name="id_sendmsg_inflater_rl"/>
+     <item type="id" name="id_sendmsg_inflater_group_nametv"/>
+     <item type="id" name="id_sendmsg_inflater_group_nameck"/>
+     <item type="id" name="id_sendmsg_inflater_histime_tv"/>
+     <item type="id" name="id_sendmsg_inflater_hisstate_tv"/>
+     <item type="id" name="id_senmdmsg_inflater_hiscontent_tv"/>
+     <item type="id" name="web_view"/>
+     <item type="id" name="Top_Date"/>      
+    
+     <!--服务  日程-->
+     <item type="id" name="id_service_write_schedule_time_tv"/>
+     <item type="id" name="id_service_write_schedule_tixing_tv"/>
+     <item type="id" name="id_service_write_schedule_comments_tv"/>
+     <item type="id" name="id_service_write_schedule_actor_tv"/>
+     <item type="id" name="id_service_write_schedule_grid"/>
+     <item type="id" name="id_inflater_service_schedule_iv"/>
+     <item type="id" name="id_inflater_service_schedule_tv"/>
+     <item type="id" name="id_service_schedule_remind_lv"/>
+     <!-- 首页开始 -->
+     <item type="id" name="home_Message_lv" />
+     <item type="id" name="iv_head" />
+     <item type="id" name="tv_message_num" />
+     <item type="id" name="tv_name" />
+     <item type="id" name="tv_time" />
+     <item type="id" name="tv_lastcontent" />
+     <item type="id" name="btn_top_barcode" />
+     <!-- 首页结束 -->
+     <!-- 公众号 -->
+      <item type="id" name="publicAccount_Message_lv" />
+      <item type="id" name="textViewTime" />
+      <item type="id" name="textViewReadFullTag" />
+      <item type="id" name="textViewMessageSummary" />
+      <item type="id" name="imageViewThumbnail" />
+      <item type="id" name="textViewMessageTitle" />
+      <item type="id" name="commonwebview" />
+      <item type="id" name="imageMenuTabLine" />
+      <item type="id" name="imageMenuExpand" />
+      <item type="id" name="textMenuTitle" />
+      <item type="id" name="customMenuMessageLayout" />
+      <item type="id" name="buttonToNormalMessage" />
+       <item type="id" name="menuItemTv1" />
+       <item type="id" name="menuItemTv2" />
+       <item type="id" name="menuItemTv3" />
+       <item type="id" name="menuItemTv4" />
+       <item type="id" name="popup_menu_icon" />
+       <item type="id" name="popup_menu_title" />
+        <item type="id" name="message_bottom_submenu_arrow" />
+        <item type="id" name="tv_viewcontentLink" />
+        <item type="id" name="tv_item_time" />
+       <!-- 通讯录与服务 -->
+       <item type="id" name="albumitem_imageview" />
+       <item type="id" name="albumitem_progress" />
+       <item type="id" name="albumitem_nametextview" />
+       <item type="id" name="albumitem_counttv" />
+       <item type="id" name="activity_getalbumgrid" />
+       <item type="id" name="selectphoto_gridview" />
+       <item type="id" name="selectphoto_image" />
+       <item type="id" name="selectphoto_probar" />
+       <item type="id" name="selectphoto_select" />
+       <item type="id" name="selectphoto_unselect" />
+       <item type="id" name="contact_addfriend_ly" />
+       <item type="id" name="contact_addfriend_left_tab" />
+       <item type="id" name="contact_addfriend_sreachbt" />
+       <item type="id" name="contact_addfriend_edittext" />
+       <item type="id" name="contact_addfriend_right_tab" />
+       <item type="id" name="contact_addfriend_result_listview" />
+       <item type="id" name="contact_addfriend_content" />
+       <item type="id" name="contact_addfriend_tablayout" />      
+       <item type="id" name="contact_addfriend_fuyuanpop_fyet" />
+       <item type="id" name="contact_addfriend_fuyuanpop_closebt" />
+       <item type="id" name="contact_addfriend_fuyuanpop_sendbt" />
+       <item type="id" name="contact_addfriend_noresulttv" />
+       <item type="id" name="contact_addfriend_listview" />
+       <item type="id" name="contact_frienddatacard_iv" />
+       <item type="id" name="contact_frienddatacard_nametv" />
+       <item type="id" name="contact_frienddatacard_numbertv" />
+       <item type="id" name="contact_frienddatacard_kgrly" />
+       <item type="id" name="contact_frienddatacard_kgtv" />
+       <item type="id" name="contact_frienddatacard_kgrview" />
+       <item type="id" name="contact_frienddatacard_dutyrly" />
+       <item type="id" name="contact_frienddatacard_dutytv" />
+       <item type="id" name="contact_frienddatacard_dutyrview" />
+       <item type="id" name="contact_frienddatacard_sexrly" />
+       <item type="id" name="contact_frienddatacard_sextv" />
+       <item type="id" name="contact_frienddatacard_sexrview" />
+       <item type="id" name="contact_frienddatacard_regiontv" />
+       <item type="id" name="contact_frienddatacard_regionrview" />
+       <item type="id" name="contact_frienddatacard_sendly" />
+       <item type="id" name="contact_frienddatacard_sendview" />
+       <item type="id" name="contact_frienddatacard_lookhistoryly" />
+       <item type="id" name="contact_frienddatacard_lookhistorybtn" />
+       <item type="id" name="contact_frienddatacard_lookhistoryview" />
+       <item type="id" name="contact_frienddatacard_deletecontactly" />
+       <item type="id" name="contact_frienddatacard_deletecontactbtn" />
+       <item type="id" name="contact_frienddatacard_deletecontactview" />
+       <item type="id" name="contact_friendreqest_listview" />
+       <item type="id" name="contact_friend_request_itemiv" />
+       <item type="id" name="contact_friend_request_itemfuyantv" />
+       <item type="id" name="contact_friend_request_itemaccepttv" />
+       <item type="id" name="contact_friend_request_itemrefusetv" />
+       <item type="id" name="contact_list_lv" />
+       <item type="id" name="activity_contacts_main_puaclvline" />
+       <item type="id" name="activity_contacts_main_puactv" />
+       <item type="id" name="activity_contacts_main_friendlistview" />
+       <item type="id" name="activity_contacts_main_friendlvline" />
+       <item type="id" name="activity_contacts_main_expandlistview" />
+       <item type="id" name="contacts_main_menu_btn" />
+       <item type="id" name="first_line_menu" />
+       <item type="id" name="contacts_main_menu_bookpuac" />
+       <item type="id" name="contacts_main_menu_addfrinend" />
+       <item type="id" name="contacts_main_menu_friendrequest" />
+       <item type="id" name="contact_main_centerpopwindowtv1" />
+       <item type="id" name="contact_main_centerpopwindowtv2" />
+       <item type="id" name="contact_main_centerpopwindowtv3" />
+       <item type="id" name="contact_main_centerpopwindowviewline3" />
+       <item type="id" name="contact_main_centerpopwindowtv4" />
+       <item type="id" name="contact_childnametv" />
+       <item type="id" name="contact_childarrowiv" />
+       <item type="id" name="activity_contacts_main_expangroupitemiv" />
+       <item type="id" name="activity_contacts_main_expangroupitemtv" />
+       <item type="id" name="contact_frienditemiv" />
+       <item type="id" name="contact_frienditemnametv" />
+       <item type="id" name="contact_friendphonetv" />
+       <item type="id" name="contact_friendaddbt" />
+       <item type="id" name="contact_puacitemiv" />
+       <item type="id" name="contact_puacitemnametv" />
+       <item type="id" name="contact_puacitemdescripttv" />
+       <item type="id" name="contact_puacdatacard_iv" />
+       <item type="id" name="contact_puacdatacard_nametv" />
+       <item type="id" name="contact_puacdatacard_numbertv" />
+       <item type="id" name="contact_puacddatacard_fieldrly" />
+       <item type="id" name="contact_puacdatacard_fieldtv" />
+       <item type="id" name="contact_puacdatacard_describerly" />
+       <item type="id" name="contact_puacdatacard_describertv" />
+       <item type="id" name="contact_puacdatacard_bookly" />
+       <item type="id" name="contact_puacdatacard_bookbtn" />
+       <item type="id" name="contact_puacdatacard_lookhistoryly" />
+       <item type="id" name="contact_puacdatacard_lookhistorybtn" />
+       <item type="id" name="contact_puacdatacard_viewline" />
+       <item type="id" name="service_gridviewitemiv" />
+       <item type="id" name="service_addressbook_listview" />
+       <item type="id" name="service_addressbook_itemrecnametv" />
+       <item type="id" name="service_addressbook_itemrecaddresstv" />
+       <item type="id" name="service_addressbook_itemrecphonetv" />
+       <item type="id" name="service_addressbook_itemrecyoubiantv" />
+       <item type="id" name="service_addressbook_itemrecdelbt" />
+       <item type="id" name="service_addressbook_itemreceditbt" />
+       <item type="id" name="service_pointexchange_fillinfor_savebtn" />
+       <item type="id" name="service_pointexchange_fillinfor_selectbtn" />
+       <item type="id" name="service_pointexchange_hisitem_nametext" />
+       <item type="id" name="service_pointexchange_hisitem_counttext" />
+       <item type="id" name="service_pointexchange_hisitem_timetext" />
+       <item type="id" name="service_pointexchangehis_listview" />
+       <item type="id" name="service_pointexchangemian_itemiv" />
+       <item type="id" name="service_pointexchangemian_itemgoodstv" />
+       <item type="id" name="service_pointexchangemian_itempointtv" />
+       <item type="id" name="service_pointexchangemian_itemgoodsexplaintv" />
+       <item type="id" name="service_pointexchangemian_itemexchangebtn" />
+       <item type="id" name="service_pointexchange_adddressbookly" />
+       <item type="id" name="service_pointexchange_adddressbeniv" />
+       <item type="id" name="service_pointexchange_exchangehisly" />
+       <item type="id" name="service_pointexchange_exchangehisiv" />
+       <item type="id" name="service_pointexchange_exchangeexplainly" />
+       <item type="id" name="service_pointexchange_exchangeexplainiv" />
+       <item type="id" name="service_pointexchange_listview" />
+       <item type="id" name="service_publishspeak_ed" />
+       <item type="id" name="service_publishspeak_facebtn" />
+       <item type="id" name="service_publishspeak_facely" />
+       <item type="id" name="service_publishspeak_face" />
+       <item type="id" name="service_publishspeak_ciecle" />
+       <item type="id" name="service_publishspeak_gridviewly" />
+       <item type="id" name="service_publishspeak_gv" />
+       <item type="id" name="service_speak_listview" />
+       <item type="id" name="service_speak_itemiv" />
+       <item type="id" name="service_speak_nametv" />
+       <item type="id" name="service_speak_time" />
+       <item type="id" name="service_speak_upnowtv" />
+       <item type="id" name="service_speak_imagename" />
+       <item type="id" name="service_speak_gridview" />
+       <item type="id" name="service_speakitem_delbtn" />
+       <item type="id" name="service_speakitem_commentbtn" />
+       <item type="id" name="service_taskmain_listview" />
+       <item type="id" name="service_taskmian_lvitemlv1" />
+       <item type="id" name="service_taskmain_itemiv" />
+       <item type="id" name="service_taskmain_itemnametv" />
+       <item type="id" name="service_taskmain_itempointtv" />
+       <item type="id" name="service_taskmain_itemgetbtn" />
+       <item type="id" name="service_pointexchange_fillinfor_et4" />
+       <item type="id" name="service_pointexchange_fillinfor_et3" />
+       <item type="id" name="service_pointexchange_fillinfor_et2" />
+       <item type="id" name="service_pointexchange_fillinfor_et1" />
+       <item type="id" name="service_pointexchange_pointtv" />
+       <item type="id" name="service_pointexchange_resulttv" />
+       <item type="id" name="contact_frienddatacard_regionrly" />
+       <item type="id" name="contact_frienddatacard_sendmessagebtn" />
+       <item type="id" name="contact_friend_request_itemnametv" />
+       <item type="id" name="activity_contacts_main_puaclistview" />
+       <item type="id" name="activity_contacts_main_teacherlistview" />
+       <item type="id" name="activity_contacts_main_teacherlvline" />
+       <item type="id" name="activity_contacts_main_parentlistview" />
+       <item type="id" name="activity_contacts_main_parentlvline" />
+       <item type="id" name="contact_addfriend_progressbar" />
+       <item type="id" name="contact_friend_request_btnly" />    
+       <item type="id" name="item_view" />    
+       <item type="id" name="rl_viewhistoryMessage" />
+       
+       <!-- 登录 -->
+       <item type="id" name="login_logo" />
+       <item type="id" name="btn_createnick_inApp" />
+       <item type="id" name="ed_regester_nickname" />
+
+       <!-- 注册 -->
+       <item type="id" name="boy_logo" />
+       <item type="id" name="girl_logo" />
+       
+      <!-- 个人中心 -->
+       <item type="id" name="btn_me_signout" />
+      <item type="id" name="tabBtn_left" />
+      <item type="id" name="tabBtn_middle" />
+      <item type="id" name="tabBtn_right" />
+      
+      <!-- 扫一扫 -->
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+     
+    <!-- error ,empty,loading -->
+     <item name="common_empty" type="id"/>
+     <item name="common_progress" type="id"/>
+    <item name="common_loading" type="id"/>
+    <item name="common_network_disable" type="id"/>
+    <item name="network_disable_button_relink" type="id"/>
+    <item name="common_error" type="id"/>
+    <item name="error_button" type="id"/>
+    <item name="initLayout" type="id"/>
+    
+      <!-- 班级相册 -->
+    <item name="classphoto_gridview" type="id"/>
+    <item name="classphoto_gv_count_tv" type="id"/>
+    <item name="classphoto_gv_album_iv" type="id"/>
+    <item name="ll_bottom_block" type="id"/>
+    <item name="retry_upload" type="id"/>
+    <item name="close_upload" type="id"/>
+    <item name="tv_uploadfail" type="id"/>
+    <item name="ll_upload_process" type="id"/>
+    <item name="tv_upload_process" type="id"/>
+    <item name="tv_selectPhtot" type="id"/>
+    <item name="photo_desc_name_tv" type ="id"/>
+
+
+    <!--include布局-->
+    <item name="include_layout_image_text" type ="id"/>
+    <item name="include_layout_text" type ="id"/>
+    <item name="include_layout_image" type ="id"/>
+    <item name="activity_title" type ="id"/>
+
+</resources>

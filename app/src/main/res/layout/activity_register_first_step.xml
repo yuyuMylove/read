@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/common_header_layout"
+        >
+    </include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dimen_13_dip"
+            android:layout_marginLeft="@dimen/dimen_13_dip"
+            android:layout_marginRight="@dimen/dimen_13_dip"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:background="@drawable/input_edittext_background"
+            >
+
+            <Button
+                android:id="@+id/creat_get_code_btn"
+                android:layout_height="@dimen/dimen_33_dip"
+                android:layout_width="@dimen/dimen_100_dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:background="@drawable/pin_btn_code_selector"
+                android:textColor="@color/yellow_topbar"
+                android:text="获取验证码"
+                android:textSize="@dimen/txtSize_17_sp"
+                >
+
+            </Button>
+
+            <EditText
+                android:id="@+id/ed_regester_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60_dip"
+                android:layout_toLeftOf="@id/creat_get_code_btn"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_centerVertical="true"
+                android:layout_weight="1.0"
+                android:digits="@string/register_name_digits"
+                android:background="@null"
+                android:ems="10"
+                android:paddingLeft="@dimen/dimen_12_dip"
+                android:paddingRight="@dimen/dimen_8_dip"
+                android:hint="@string/hint_phone_number"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="@dimen/txtSize_18_sp"
+                >
+            </EditText>
+            <requestFocus />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dimen_13_dip"
+            android:layout_marginLeft="@dimen/dimen_13_dip"
+            android:layout_marginRight="@dimen/dimen_13_dip"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:background="@drawable/input_edittext_background"
+            >
+
+            <EditText
+                android:id="@+id/creat_get_code_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60_dip"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dimen_12_dip"
+                android:paddingRight="@dimen/dimen_8_dip"
+                android:background="@null"
+                android:digits="@string/register_name_digits"
+                android:ems="10"
+                android:hint="请输入验证码"
+                android:textColor="#333333"
+                android:textSize="@dimen/txtSize_18_sp"
+                >
+            </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dimen_13_dip"
+            android:layout_marginLeft="@dimen/dimen_13_dip"
+            android:layout_marginRight="@dimen/dimen_13_dip"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:background="@drawable/input_edittext_background"
+            >
+
+            <EditText
+                android:id="@+id/ed_get_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60_dip"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dimen_12_dip"
+                android:paddingRight="@dimen/dimen_8_dip"
+                android:background="@null"
+                android:digits="@string/register_name_digits"
+                android:ems="10"
+                android:hint="@string/hint_password_number"
+                android:textColor="#333333"
+                android:textSize="@dimen/txtSize_18_sp"
+                >
+            </EditText>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_gravity="center"
+            android:text="@string/next_step"
+            android:id="@+id/btn_activity_nextstep"
+            android:layout_marginTop="@dimen/dimen_35_dip"
+            style="@style/mainBtn"
+            >
+        </Button>>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

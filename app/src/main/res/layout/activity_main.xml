@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_tab"
+        android:weightSum="4"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_tab"
+                android:drawablePadding="-5dip"
+                android:drawableTop="@drawable/selector_tab_home"
+                android:onClick="onTabSelect"
+                android:paddingBottom="@dimen/dimen_2_dip"
+                android:paddingTop="@dimen/dimen_6_dip"
+                android:scaleType="matrix"
+                android:text="@string/tab_home"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/txtSize_14_sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_square"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_tab"
+                android:drawableTop="@drawable/selector_tab_square"
+                android:drawablePadding="-5dip"
+                android:onClick="onTabSelect"
+                android:paddingBottom="@dimen/dimen_2_dip"
+                android:paddingTop="@dimen/dimen_6_dip"
+                android:scaleType="matrix"
+                android:text="@string/tab_square"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/txtSize_14_sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/btn_service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_tab"
+                android:drawableTop="@drawable/selector_tab_service"
+                android:drawablePadding="-5dip"
+                android:onClick="onTabSelect"
+                android:paddingBottom="@dimen/dimen_2_dip"
+                android:paddingTop="@dimen/dimen_6_dip"
+                android:scaleType="matrix"
+                android:text="@string/tab_service"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/txtSize_14_sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/btn_me"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_tab"
+                android:drawableTop="@drawable/selector_tab_me"
+                android:drawablePadding="-5dip"
+                android:onClick="onTabSelect"
+                android:paddingBottom="@dimen/dimen_2_dip"
+                android:paddingTop="@dimen/dimen_6_dip"
+                android:scaleType="matrix"
+                android:text="@string/tab_me"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/txtSize_14_sp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

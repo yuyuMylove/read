@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.yey.read.widget.loginwidget.CircleImageView
+        android:layout_gravity="center"
+        android:id="@id/login_logo"
+        android:layout_width="@dimen/dimen_97_dip"
+        android:layout_height="@dimen/dimen_97_dip"
+
+        android:layout_marginTop="@dimen/dimen_63_dip"
+
+        android:src="@drawable/ic_launcher"
+        app:border_width="0.5dip"
+        app:border_color="@color/white"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/common_border_no_shadow"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_112_dip"
+        android:layout_marginTop="@dimen/dimen_50_dip"
+        >
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_bottom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_56_dip"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_32_dip"
+                android:layout_height="@dimen/dimen_32_dip"
+                android:layout_marginLeft="@dimen/dimen_20_dip"
+                android:src="@drawable/icon_login_account"
+                />
+
+            <com.yey.read.widget.loginwidget.CustomAutoCompleteTextView
+                android:id="@+id/edt_activity_login_login_id"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:selectAllOnFocus="true"
+                android:paddingLeft="@dimen/dimen_10_dip"
+                android:hint="@string/login_account"
+                android:singleLine="true"
+                android:dropDownVerticalOffset="@dimen/dimen_1_dip"
+                android:dropDownAnchor="@id/edt_activity_login_login_id"
+                android:textColorHint="#ff818181"
+                android:completionThreshold="1"
+                android:textColor="@color/light_grey_v2"
+                android:textSize="@dimen/txtSize_18_sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_bottom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_56_dip"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_32_dip"
+                android:layout_height="@dimen/dimen_32_dip"
+                android:layout_marginLeft="@dimen/dimen_20_dip"
+                android:src="@drawable/icon_login_password"
+                />
+
+            <EditText
+                android:layout_width="0.0dip"
+                android:gravity="center_vertical"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0.0dip"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:id="@+id/edt_activity_login_login_password"
+                android:hint="@string/login_password"
+                android:textSize="@dimen/txtSize_18_sp"
+                android:textColor="@color/light_grey_v2"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dimen_8_dip"
+                android:paddingRight="@dimen/dimen_8_dip"
+                android:password="true"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/login_button"
+        android:id="@+id/btn_activity_login"
+        android:layout_marginTop="@dimen/dimen_35_dip"
+        android:layout_marginLeft="@dimen/dimen_23_dip"
+        android:layout_marginRight="@dimen/dimen_23_dip"
+        style="@style/mainBtn"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_25_dip"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:layout_marginRight="@dimen/dimen_25_dip"
+        >
+
+        <TextView
+            android:textSize="@dimen/txtSize_17_sp"
+            android:textColor="@color/light_grey_v2"
+            android:id="@+id/tv_activity_login_login_forget"
+            android:padding="@dimen/dimen_5_dip"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:textSize="@dimen/txtSize_17_sp"
+            android:textColor="@color/light_grey_v2"
+            android:id="@+id/tv_activity_login_login_register"
+            android:padding="@dimen/dimen_5_dip"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

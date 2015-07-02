@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yey.read" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".common.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".loading.controller.LoadingActivity"
+            android:label="@string/title_activity_loading"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".loading.controller.GuideActivity"
+            android:label="@string/title_activity_guide" >
+        </activity>
+        <activity
+            android:name=".login.controller.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".register.controller.RegisterFirstStepActivity"
+            android:label="@string/title_activity_first_step" >
+        </activity>
+        <activity
+            android:name=".register.controller.RegisterSecondStepActivity"
+            android:label="@string/title_activity_second_step" >
+        </activity>
+        <activity
+            android:name=".register.controller.RegisterThirdStepActivity"
+            android:label="@string/title_activity_third_step" >
+        </activity>
+        <activity
+            android:name=".register.controller.RegisterFourthStepActivity"
+            android:label="@string/title_activity_fourth_step" >
+        </activity>
+        <activity
+            android:name=".register.controller.RegisterFifthStepActivity"
+            android:label="@string/title_activity_fifth_step" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".home.activity.RecommendBookActivity"
+            android:label="@string/title_activity_recommend_book" >
+        </activity>
+        <activity
+            android:name=".home.activity.BookDetailActivity"
+            android:label="@string/title_activity_book_detail" >
+        </activity>
+    </application>
+
+</manifest>
