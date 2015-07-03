@@ -26,6 +26,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.yey.read.R;
 import com.yey.read.common.AppManager;
 import com.yey.read.util.DialogTips;
+import com.yey.read.widget.LoadingDialog;
 
 /**
  * Created by sunnie on 15/6/1.
@@ -48,6 +49,8 @@ public  class BaseActivity extends FragmentActivity {
 //    public LoadingDialog loadingdialog;
     private static final int notifiId = 11;
     protected NotificationManager notificationManager;
+    private LoadingDialog loadingdialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -301,18 +304,18 @@ public  class BaseActivity extends FragmentActivity {
      * @exception
      * @since  1.0.0
      */
-//    public void showLoadingDialog(String text){
-//        if(loadingdialog!=null){
-//            loadingdialog.setText(text);
-//            if(!loadingdialog.isShowing()){
-//                loadingdialog.show();
-//            }
-//        }else{
-//            loadingdialog = new LoadingDialog(this, text);
-//            loadingdialog.show();
-//        }
-//
-//    }
+    public void showLoadingDialog(String text){
+        if(loadingdialog!=null){
+            loadingdialog.setText(text);
+            if(!loadingdialog.isShowing()){
+                loadingdialog.show();
+            }
+        }else{
+            loadingdialog = new LoadingDialog(this, text);
+            loadingdialog.show();
+        }
+
+    }
 
     /**
      * 取消加载对话框
@@ -321,11 +324,11 @@ public  class BaseActivity extends FragmentActivity {
      * @exception
      * @since  1.0.0
      */
-//    public void cancelLoadingDialog(){
-//        if (loadingdialog != null && loadingdialog.isShowing()) {
-//            loadingdialog.dismiss();
-//        }
-//    }
+    public void cancelLoadingDialog(){
+        if (loadingdialog != null && loadingdialog.isShowing()) {
+            loadingdialog.dismiss();
+        }
+    }
 
     /** 隐藏软键盘
      * hideSoftInputView

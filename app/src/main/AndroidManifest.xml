@@ -61,6 +61,38 @@
             android:name=".home.activity.BookDetailActivity"
             android:label="@string/title_activity_book_detail" >
         </activity>
+        <activity
+            android:name=".me.activity.MeInfoActivity"
+            android:label="@string/title_activity_me_info" >
+        </activity>
+        <activity
+            android:name=".me.activity.VIPCenterActivity"
+            android:label="@string/title_activity_vipcenter" >
+        </activity>
+        <activity
+            android:name=".me.activity.AccountSafeActivity"
+            android:label="@string/title_activity_account_safe" >
+        </activity>
+        <activity
+            android:name=".me.activity.UpdatePasswordActivity"
+            android:label="@string/title_activity_update_password" >
+        </activity>
+        <activity
+            android:name=".me.activity.BindPhoneNumActivity"
+            android:label="@string/title_activity_bind_phone_num" >
+        </activity>
+        <activity
+            android:name=".me.activity.AboutUsActivity"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name=".me.activity.MeShareActivity"
+            android:label="@string/title_activity_me_share" >
+        </activity>
+        <activity
+            android:name=".me.activity.MeOpinionActivity"
+            android:label="@string/title_activity_me_opinion" >
+        </activity>
     </application>
 
 </manifest>

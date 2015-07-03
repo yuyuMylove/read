@@ -16,6 +16,29 @@
     <color name="more">#666666</color>
     <color name="age_background">#e5e5e5</color>
 
+    <!--我-->
+    <color name="me_white">#ffffff</color>
+    <color name="me_purple">#a383f0</color>
+    <color name="me_black">#111111</color>
+
+    <color name="me_fragment_background">#DFDFDF</color>
+    <color name="me_info_text">#333333</color>
+    <color name="me_signout_text">#FF0000</color>
+    <!--我的宝贝-->
+    <color name="me_baby_item_text">#999999</color>
+    <color name="me_baby_info_text">#333333</color>
+    <!--会员中心-->
+    <color name="vip_text">#8d6701</color>
+    <color name="vip_date_background">#FEFFF1</color>
+    <color name="vip_normal">#333333</color>
+    <!--修改密码-->
+    <color name="safe_edit_psw_text">#999999</color>
+    <!--取消绑定-->
+    <color name="bind_phone_cancel_text">#3e3e39</color>
+    <!--关于-->
+    <color name="about_us_info">#80807c</color>
+    <!--分享app-->
+    <color name="share_app_text">#585858</color>
 
       <color name="white">#ffffffff</color>
       <color name="dark">#FF222222</color>

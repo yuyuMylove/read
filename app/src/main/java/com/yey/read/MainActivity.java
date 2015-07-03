@@ -2,6 +2,8 @@ package com.yey.read;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.view.View;
 import android.widget.Button;
 
 import com.lidroid.xutils.ViewUtils;
@@ -26,12 +28,15 @@ public class MainActivity extends BaseActivity {
     public static Fragment[] fragments;
     private HomeFragment homeFragment;
     private ServiceFragment serviceFragment;
-    private SquareFragment squareFragement;
+    private SquareFragment squareFragment;
     private MeFragment meFragment;
 
     private AccountInfo accountInfo;
     private Button[] mTabs;
     private String type=null;
+
+    private int index;
+    private int currentTabIndex;
 
 
     @Override
@@ -68,12 +73,57 @@ public class MainActivity extends BaseActivity {
 
     private void initTab() {
         homeFragment  = new HomeFragment();
-//        serviceFragment = new ServiceFragment();
-//        squareFragement = new SquareFragment();
-//        meFragment = new MeFragment();
+        squareFragment = new SquareFragment();
+        serviceFragment = new ServiceFragment();
+        meFragment = new MeFragment();
 
-        fragments = new Fragment[] {homeFragment};
-        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, homeFragment)
-                .show(homeFragment).commitAllowingStateLoss();
+        fragments = new Fragment[] {homeFragment,squareFragment,serviceFragment,meFragment};
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.fragment_container, homeFragment).show(homeFragment)
+                .add(R.id.fragment_container, squareFragment).hide(squareFragment)
+                .add(R.id.fragment_container, serviceFragment).hide(serviceFragment)
+                .add(R.id.fragment_container, meFragment).hide(meFragment)
+                .commitAllowingStateLoss();
+    }
+    /**
+     * button点击事件
+     * @param view
+     */
+    public void onTabSelect(View view) {
+        /*homeFragment.hidePullMenu();
+        serviceFragment.hidePullMenu();
+        if(accountInfo!=null && accountInfo.getRole()==2){
+            newcontactFragment.hidePullMenu();
+        }else{
+            contactFragment.hidePullMenu();
+        }
+        meFragment.hidePullMenu();*/
+        switch (view.getId()) {
+            case R.id.btn_home:
+//                iv_recent_tips.setVisibility(View.GONE);
+                index = 0;
+                break;
+            case R.id.btn_square:
+                index = 1;
+                break;
+            case R.id.btn_service:
+                index = 2;
+                break;
+            case R.id.btn_me:
+                index = 3;
+                break;
+        }
+        if (currentTabIndex != index) {
+            FragmentTransaction trx = getSupportFragmentManager().beginTransaction();
+            trx.hide(fragments[currentTabIndex]);
+            if (!fragments[index].isAdded()) {
+                trx.add(R.id.fragment_container, fragments[index]);
+            }
+            trx.show(fragments[index]).commitAllowingStateLoss();
+        }
+        mTabs[currentTabIndex].setSelected(false);
+        //把当前tab设为选中状态
+        mTabs[index].setSelected(true);
+        currentTabIndex = index;
     }
 }

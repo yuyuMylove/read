@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv_vip_privilege"
+        android:layout_width="@dimen/dimen_55_dip"
+        android:layout_height="@dimen/dimen_55_dip"
+        android:src="@drawable/icon_vip_privilege1"/>
+    <TextView
+        android:id="@+id/tv_vip_privilege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20_dip"
+        android:text="特权试试看"
+        android:textSize="@dimen/txtSize_16_sp"
+        android:textColor="@color/vip_normal"/>
+</LinearLayout>

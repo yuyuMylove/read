@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/me_fragment_background">
+    <include layout="@layout/common_header_layout"/>
+    <View  android:layout_marginTop="@dimen/dimen_25_dip" style="@style/viewlinestyle"/>
+    <RelativeLayout
+        android:id="@+id/layout_idsafe_updatepw"
+        android:background="@drawable/selector_me_item_background"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="@dimen/dimen_20_dip"
+            android:textSize="@dimen/txtSize_17_sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="修改密码"
+            android:textColor="@color/base_color_text_black"/>
+        <ImageView
+            android:layout_width="@dimen/dimen_12_dip"
+            android:layout_height="@dimen/dimen_12_dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_11_dip"
+            android:src="@drawable/icon_me_go"
+            />
+    </RelativeLayout>
+    <View  style="@style/viewlinestyle"/>
+    <RelativeLayout android:id="@+id/layout_idsafe_bangdephone" android:orientation="horizontal"
+        android:background="@drawable/selector_me_item_background"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20_dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/txtSize_17_sp"
+            android:text="绑定手机号"
+            android:textColor="@color/base_color_text_black"/>
+
+        <ImageView
+            android:id="@+id/iv_idsafe_go"
+            android:layout_width="@dimen/dimen_12_dip"
+            android:layout_height="@dimen/dimen_12_dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_11_dip"
+            android:src="@drawable/icon_me_go"
+            />
+        <TextView
+            android:id="@+id/tv_idsafe_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_toLeftOf="@id/iv_idsafe_go"
+            android:layout_centerVertical="true"
+            android:textColor="@color/contact_mainlvitemtv"
+            android:textSize="@dimen/txtSize_17_sp"
+            />
+    </RelativeLayout>
+    <View  style="@style/viewlinestyle"/>
+
+
+</LinearLayout>

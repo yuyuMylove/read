@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/me_white">
+    <include layout="@layout/common_header_layout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_1_dip"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20_dip"
+                android:gravity="center"
+                android:text="扫一扫以下的二维码即可下载APP"
+                android:textSize="@dimen/txtSize_17_sp"
+                android:textColor="@color/share_app_text"/>
+            <ImageView  android:id="@+id/me_share_bariv"
+                android:layout_width="@dimen/dimen_180_dip"
+                android:layout_height="@dimen/dimen_180_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:layout_marginBottom="@dimen/dimen_10_dip"
+                android:src="@drawable/ic_launcher"
+                android:layout_gravity="center_horizontal"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="转发到微信或发短信将APP分享给朋友"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:textSize="@dimen/txtSize_17_sp"
+                android:textColor="@color/me_black"
+                android:gravity="center"/>
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:background="@drawable/me_share_frame">
+                <TextView android:id="@+id/tv_me_share"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/dimen_3_dip"
+                    android:textSize="@dimen/txtSize_14_sp"
+                    android:textColor="@color/share_app_text"
+                    android:paddingLeft="@dimen/dimen_5_dip"
+                    android:paddingRight="@dimen/dimen_5_dip"
+                    android:paddingTop="@dimen/dimen_5_dip"/>
+                <TextView android:id="@+id/tv_me_share_website"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/txtSize_14_sp"
+                    android:padding="@dimen/dimen_5_dip"
+                    android:textColor="#777fff"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_share_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                android:text="分享至"
+                android:textSize="@dimen/txtSize_18_sp"
+                android:textColor="@color/me_white"
+                android:background="@drawable/me_share_green"
+                android:drawableRight="@drawable/me_share_weixin"
+                android:drawablePadding="@dimen/dimen_5_dip"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:paddingRight="@dimen/dimen_12_dip"
+                android:paddingLeft="@dimen/dimen_12_dip"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

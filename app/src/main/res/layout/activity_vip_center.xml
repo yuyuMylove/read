@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/me_white"
+    android:orientation="vertical">
+
+    <include  layout="@layout/common_header_layout"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_me_info"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_vip_center"
+                android:layout_height="@dimen/dimen_209_dip"
+                >
+
+                <com.yey.read.widget.loginwidget.CircleImageView
+                    android:id="@+id/iv_vip_head"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dimen_14_dip"
+                    android:layout_width="@dimen/dimen_96_dip"
+                    android:layout_height="@dimen/dimen_96_dip"
+                    android:src="@drawable/defaulticon"
+                    app:border_color="@color/me_white"
+                    app:border_width="@dimen/dimen_5_dip"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的宝贝"
+                    android:textSize="@dimen/txtSize_17_sp"
+                    android:textColor="@color/vip_text"
+                    android:layout_below="@id/iv_vip_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_10_dip"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_vip_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_39_dip"
+                android:text="会员有效期:"
+                android:textSize="@dimen/txtSize_14_sp"
+                android:textColor="@color/vip_text"
+                android:gravity="center"
+                android:background="@color/vip_date_background"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_78_dip">
+                <View   android:layout_centerInParent="true"
+                    style="@style/viewlinestyle_vip"
+                   />
+                <Button
+                    android:layout_width="@dimen/dimen_101_dip"
+                    android:layout_height="wrap_content"
+                    android:text="会员特权"
+                    android:textSize="@dimen/txtSize_17_sp"
+                    android:textColor="@color/vip_normal"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:background="@color/me_white"/>
+                </RelativeLayout>
+            <GridView
+                android:id="@+id/gv_vip_privilege"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"></GridView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

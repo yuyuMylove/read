@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_48_dip"
+    android:background="@drawable/selector_me_item_background">
+    <TextView
+        android:id="@+id/tv_me_baby_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:textSize="@dimen/txtSize_17_sp"
+        android:textColor="@color/me_baby_item_text"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_24_dip"
+        />
+    <ImageView
+        android:id="@+id/iv_me_baby_item_go"
+        android:layout_width="@dimen/dimen_15_dip"
+        android:layout_height="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_14_dip"
+        android:src="@drawable/icon_me_go"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/tv_me_baby_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info"
+        android:textSize="@dimen/txtSize_17_sp"
+        android:textColor="@color/me_baby_info_text"
+        android:layout_toLeftOf="@id/iv_me_baby_item_go"
+        android:layout_marginRight="@dimen/dimen_30_dip"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

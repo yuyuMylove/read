@@ -205,6 +205,11 @@
     <item name="android:background">#c5c5c5</item>
 
 </style>
+    <style name="viewlinestyle_vip">
+        <item name="android:layout_width">323dp</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#c2c2c2</item>
+    </style>
     <style name="viewlinestyle_heng">
         <item name="android:layout_width">0.5dp</item>
         <item name="android:layout_height">fill_parent</item>

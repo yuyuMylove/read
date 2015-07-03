@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/me_fragment_background"
+    android:orientation="vertical">
+
+    <include  layout="@layout/common_header_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/me_white"
+                android:layout_height="@dimen/dimen_97_dip"
+                >
+
+                <TextView
+                    android:text="头像"
+                    android:textSize="@dimen/txtSize_17_sp"
+                    android:textColor="@color/me_baby_item_text"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_24_dip"/>
+
+                <ImageView
+                    android:id="@+id/iv_me_baby_go"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/dimen_15_dip"
+                    android:layout_height="@dimen/dimen_15_dip"
+                    android:layout_marginRight="@dimen/dimen_14_dip"
+                    android:src="@drawable/icon_me_go"
+                    />
+                <com.yey.read.widget.loginwidget.CircleImageView
+                    android:id="@+id/iv_me_baby_head"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/dimen_67_dip"
+                    android:layout_height="@dimen/dimen_67_dip"
+                    android:src="@drawable/defaulticon"
+                    app:border_color="@color/me_white"
+                    app:border_width="@dimen/dimen_0.5_dip"
+                    android:layout_toLeftOf="@id/iv_me_baby_go"
+                    android:layout_marginRight="@dimen/dimen_30_dip"/>
+                <View   android:layout_alignParentBottom="true" style="@style/viewlinestyle"/>
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/lv_me_baby_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_21_dip"
+                ></ListView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
