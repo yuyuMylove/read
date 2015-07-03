@@ -67,9 +67,9 @@ public class HomeFragment extends BaseFragment implements OnClickListener,OnPage
             public void onAppRequestFriend(int code, String message, Object obj, int nextid) {
                 bookRecommendsList = (ArrayList<Book>) obj;
                 //初始化引导图片列表
-                for (Book book : bookRecommendsList) {
+                for (int i=0; i < 4; i++) {
                     ImageView iv = new ImageView(HomeFragment.this.getActivity());
-                    ImageLoader.getInstance().displayImage(book.getCover(), iv);
+                    ImageLoader.getInstance().displayImage(bookRecommendsList.get(i).getCover(), iv);
                     iv.setScaleType(ImageView.ScaleType.CENTER_CROP);
                     views.add(iv);
                 }
@@ -171,12 +171,9 @@ public class HomeFragment extends BaseFragment implements OnClickListener,OnPage
             setCurView(position);
             setCurDot(position);
         } else {
-//            Intent intent = new Intent(MainActivity., RecommendBookActivity.class);
-//            Bundle bundle = new Bundle();
-//            bundle.putSerializable("1",bookRecommendsList);
-//            intent.putExtras(bundle);
-//            startActivity(intent);
-            startAnimActivity(RecommendBookActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("1",bookRecommendsList);
+            startAnimActivity(RecommendBookActivity.class,bundle);
         }
 
     }
