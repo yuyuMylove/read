@@ -6,7 +6,7 @@
     <ImageView
         android:id="@+id/iv_me_functions_item"
         android:layout_width="@dimen/dimen_35_dip"
-        android:layout_height="@dimen/dimen_65_dip"
+        android:layout_height="@dimen/dimen_60_dip"
         android:layout_centerVertical="true"
         android:src="@drawable/icon_me_about"
         android:layout_marginLeft="@dimen/dimen_14_dip"/>

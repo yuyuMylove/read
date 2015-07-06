@@ -14,7 +14,7 @@ import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnItemClick;
 import com.yey.read.R;
 import com.yey.read.common.activity.BaseActivity;
-import com.yey.read.me.adapter.MeServicesAdapter;
+import com.yey.read.common.adapter.ServicesAdapter;
 import com.yey.read.me.util.ListViewUtils;
 import com.yey.read.util.UtilsLog;
 
@@ -135,7 +135,7 @@ public class AboutUsActivity extends BaseActivity{
         //textList.add("给APP评分");
         textList.add("检查更新"+"/"+currentVersion);
         textList.add("意见反馈");
-        MeServicesAdapter adapter = new MeServicesAdapter(this,iconList,textList);
+        ServicesAdapter adapter = new ServicesAdapter(this,iconList,textList);
         lv_services.setAdapter(adapter);
         //根据item数量重新设置listview高度
         ListViewUtils.setListViewHeightBasedOnChild(lv_services);

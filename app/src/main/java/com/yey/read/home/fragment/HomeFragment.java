@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
-import com.nostra13.universalimageloader.core.ImageLoader;
 import com.yey.read.R;
 import com.yey.read.common.fragment.BaseFragment;
 import com.yey.read.home.activity.RecommendBookActivity;
@@ -21,8 +20,6 @@ import com.yey.read.home.entity.Book;
 import com.yey.read.home.entity.BookList;
 import com.yey.read.home.viewmodel.HomeViewModel;
 import com.yey.read.loading.adapter.ViewPagerAdapter;
-import com.yey.read.net.OnAppRequestListener;
-import com.yey.read.net.OnAppRequestListenerFriend;
 import com.yey.read.util.UtilsLog;
 
 import java.util.ArrayList;
@@ -62,7 +59,7 @@ public class HomeFragment extends BaseFragment implements OnClickListener,OnPage
         ViewUtils.inject(this, view);
         tv_moreRecommendBook.setOnClickListener(this);
         homeViewModel = new HomeViewModel();
-        homeViewModel.getBookRecommends(-1, new OnAppRequestListenerFriend() {
+       /* homeViewModel.getBookRecommends(-1, new OnAppRequestListenerFriend() {
             @Override
             public void onAppRequestFriend(int code, String message, Object obj, int nextid) {
                 bookRecommendsList = (ArrayList<Book>) obj;
@@ -93,7 +90,7 @@ public class HomeFragment extends BaseFragment implements OnClickListener,OnPage
                 tv_reason.setText(bookList.getReason());
             }
         });
-        vp_bookCover.setOnPageChangeListener(this);
+        vp_bookCover.setOnPageChangeListener(this);*/
         return view;
 
 

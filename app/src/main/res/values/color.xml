@@ -40,6 +40,11 @@
     <!--分享app-->
     <color name="share_app_text">#585858</color>
 
+    <!--服务-->
+    <color name="service_section_bg">#DFDFDF</color>
+    <color name="service_text">#333333</color>
+    <color name="service_tobevip_text">#ff6600</color>
+
       <color name="white">#ffffffff</color>
       <color name="dark">#FF222222</color>
       <color name="light">#FFEEEEEE</color>  

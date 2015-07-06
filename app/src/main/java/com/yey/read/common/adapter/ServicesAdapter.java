@@ -1,4 +1,4 @@
-package com.yey.read.me.adapter;
+package com.yey.read.common.adapter;
 
 import android.content.Context;
 import android.util.Log;
@@ -12,12 +12,12 @@ import com.yey.read.R;
 
 import java.util.List;
 
-public class MeServicesAdapter extends BaseAdapter{
+public class ServicesAdapter extends BaseAdapter{
 
     private Context context;
     private List<Integer> iconList;
     private List<String> textList;
-    public MeServicesAdapter(Context context, List<Integer> iconList, List<String> textList) {
+    public ServicesAdapter(Context context, List<Integer> iconList, List<String> textList) {
         this.context = context;
         this.iconList = iconList;
         this.textList = textList;
@@ -44,7 +44,7 @@ public class MeServicesAdapter extends BaseAdapter{
         ViewHolder viewHolder;
         if(convertView==null) {
             viewHolder = new ViewHolder();
-            convertView = View.inflate(context, R.layout.item_me_services, null);
+            convertView = View.inflate(context, R.layout.item_services, null);
             viewHolder.icon = (ImageView) convertView.findViewById(R.id.iv_me_functions_item);
             viewHolder.name = (TextView) convertView.findViewById(R.id.tv_me_functions_item);
             viewHolder.info = (TextView) convertView.findViewById(R.id.tv_me_item_info);

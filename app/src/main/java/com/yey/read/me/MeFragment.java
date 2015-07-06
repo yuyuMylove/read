@@ -19,7 +19,7 @@ import com.yey.read.me.activity.AboutUsActivity;
 import com.yey.read.me.activity.AccountSafeActivity;
 import com.yey.read.me.activity.MeInfoActivity;
 import com.yey.read.me.activity.VIPCenterActivity;
-import com.yey.read.me.adapter.MeServicesAdapter;
+import com.yey.read.common.adapter.ServicesAdapter;
 import com.yey.read.me.util.ListViewUtils;
 import com.yey.read.me.viewmodel.MeViewModel;
 import com.yey.read.util.UtilsLog;
@@ -55,7 +55,7 @@ public class MeFragment extends BaseFragment {
         textList.add("积分");
         textList.add("安全");
         textList.add("关于");
-        MeServicesAdapter adapter = new MeServicesAdapter(getActivity(),iconList,textList);
+        ServicesAdapter adapter = new ServicesAdapter(getActivity(),iconList,textList);
         lv_services.setAdapter(adapter);
         //根据item数量重新设置listview高度
         ListViewUtils.setListViewHeightBasedOnChild(lv_services);
