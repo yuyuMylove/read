@@ -62,6 +62,38 @@ public class Book implements Serializable{
         this.reason = reason;
     }
 
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public String getTranslate() {
+        return translate;
+    }
+
+    public void setTranslate(String translate) {
+        this.translate = translate;
+    }
+
+    public String getAuthorIntro() {
+        return authorIntro;
+    }
+
+    public void setAuthorIntro(String authorIntro) {
+        this.authorIntro = authorIntro;
+    }
+
+    public String getDetailIntro() {
+        return detailIntro;
+    }
+
+    public void setDetailIntro(String detailIntro) {
+        this.detailIntro = detailIntro;
+    }
+
     private int bookid;
     private String title;
     private String cover;
@@ -69,4 +101,8 @@ public class Book implements Serializable{
     private String author;
     private String publisher;
     private String age;
+    private String isbn;
+    private String translate;
+    private String authorIntro;
+    private String detailIntro;
 }
