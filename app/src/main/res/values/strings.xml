@@ -52,5 +52,6 @@
     <string name="title_activity_about_us">AboutUsActivity</string>
     <string name="title_activity_me_share">MeShareActivity</string>
     <string name="title_activity_me_opinion">MeOpinionActivity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
 
 </resources>

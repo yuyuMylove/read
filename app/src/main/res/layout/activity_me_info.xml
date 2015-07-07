@@ -21,6 +21,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
+                android:id="@+id/layout_me_baby_head"
                 android:layout_width="match_parent"
                 android:background="@color/me_white"
                 android:layout_height="@dimen/dimen_97_dip"
