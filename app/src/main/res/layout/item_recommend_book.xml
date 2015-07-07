@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_height="@dimen/dimen_148_dip"
         android:layout_width="match_parent"
-        android:background="@drawable/shape"
+        android:background="@drawable/shape_recommendbook_border"
         >
 
         <ImageView
